@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Observable, of} from 'rxjs';
-import {BrainyQuote} from '../brainy-quotes/brainy-quotes';
-import {BrainyQuotesService} from '../brainy-quotes/brainy-quotes.service';
+import {BrainyQuote} from '../brainy-quotes';
+import {BrainyQuotesService} from '../brainy-quotes.service';
 
 @Component({
   selector: 'app-big-brainy-quote',

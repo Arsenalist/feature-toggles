@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {TogglePointDirective} from '../toggle-point.directive';
-import {BrainyQuoteComponentFactory} from './brainy-quote-component-factory';
+import {TogglePointDirective} from '../../toggle-point.directive';
+import {BrainyQuoteComponentFactory} from '../brainy-quote-component-factory';
 
 @Component({
   selector: 'app-brainy-quotes',

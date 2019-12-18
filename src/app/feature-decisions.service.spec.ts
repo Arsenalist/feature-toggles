@@ -8,5 +8,6 @@ describe('FeatureDecisionsService', () => {
   it('should return a map of feature decisions', () => {
     const service: FeatureDecisionsService = TestBed.get(FeatureDecisionsService);
     expect(service.featureDecisions().showLargeBrainyQuotes).toEqual(true);
+    expect(service.featureDecisions().showMovieDescriptions).toEqual(false);
   });
 });

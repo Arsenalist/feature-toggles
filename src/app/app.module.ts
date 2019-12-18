@@ -7,6 +7,7 @@ import { BrainyQuotesContainerComponent } from './brainy-quotes/brainy-quotes-co
 import { TogglePointDirective } from './toggle-point.directive';
 import { BigBrainyQuoteComponent } from './brainy-quotes/big-brainy-quote/big-brainy-quote.component';
 import { SmallBrainyQuoteComponent } from './brainy-quotes/small-brainy-quote/small-brainy-quote.component';
+import { FeatureToggleDirective } from './feature-toggle.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SmallBrainyQuoteComponent } from './brainy-quotes/small-brainy-quote/sm
     BrainyQuotesContainerComponent,
     TogglePointDirective,
     BigBrainyQuoteComponent,
-    SmallBrainyQuoteComponent
+    SmallBrainyQuoteComponent,
+    FeatureToggleDirective
   ],
   imports: [
     BrowserModule,

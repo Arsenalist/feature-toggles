@@ -1,5 +1,5 @@
 import { BigBrainyQuoteComponent } from './big-brainy-quote.component';
-import {BrainyQuotesService} from '../brainy-quotes/brainy-quotes.service';
+import {BrainyQuotesService} from '../brainy-quotes.service';
 
 describe('BigBrainyQuoteComponent', () => {
 

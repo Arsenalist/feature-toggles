@@ -1,5 +1,5 @@
 import {FeatureDecisionsService} from '../feature-decisions.service';
-import {BigBrainyQuoteComponent} from '../big-brainy-quote/big-brainy-quote.component';
+import {BigBrainyQuoteComponent} from './big-brainy-quote/big-brainy-quote.component';
 import {SmallBrainyQuoteComponent} from './small-brainy-quote/small-brainy-quote.component';
 import {ComponentFactory, ComponentFactoryResolver, Injectable} from '@angular/core';
 

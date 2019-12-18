@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrainyQuotesComponent } from './brainy-quotes/brainy-quotes.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BrainyQuotesComponent
   ],
   imports: [
     BrowserModule,

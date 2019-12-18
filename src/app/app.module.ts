@@ -4,11 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrainyQuotesComponent } from './brainy-quotes/brainy-quotes.component';
+import { TogglePointDirective } from './toggle-point.directive';
+import { BigBrainyQuoteComponent } from './big-brainy-quote/big-brainy-quote.component';
+import { SmallBrainyQuoteComponent } from './small-brainy-quote/small-brainy-quote.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BrainyQuotesComponent
+    BrainyQuotesComponent,
+    TogglePointDirective,
+    BigBrainyQuoteComponent,
+    SmallBrainyQuoteComponent
   ],
   imports: [
     BrowserModule,

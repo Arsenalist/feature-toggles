@@ -4,10 +4,10 @@ import {BrainyQuoteComponentFactory} from './brainy-quote-component-factory';
 
 @Component({
   selector: 'app-brainy-quotes',
-  templateUrl: './brainy-quotes.component.html',
-  styleUrls: ['./brainy-quotes.component.scss']
+  templateUrl: './brainy-quotes-container.component.html',
+  styleUrls: ['./brainy-quotes-container.component.scss']
 })
-export class BrainyQuotesComponent implements OnInit {
+export class BrainyQuotesContainerComponent implements OnInit {
 
   constructor(private brainyQuoteComponentFactory: BrainyQuoteComponentFactory) { }
 

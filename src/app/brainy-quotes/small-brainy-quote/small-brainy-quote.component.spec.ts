@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SmallBrainyQuoteComponent } from './small-brainy-quote.component';
-import {BrainyQuotesService} from '../brainy-quotes/brainy-quotes.service';
-import {BigBrainyQuoteComponent} from '../big-brainy-quote/big-brainy-quote.component';
+import {BrainyQuotesService} from '../brainy-quotes.service';
+import {BigBrainyQuoteComponent} from '../../big-brainy-quote/big-brainy-quote.component';
 
 describe('SmallBrainyQuoteComponent', () => {
   it('should setup the brainy quotes by calling the service', () => {

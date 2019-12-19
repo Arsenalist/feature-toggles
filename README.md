@@ -1,27 +1,29 @@
-# FeatureToggles
+# Feature Flag Demos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
+Three examples of feature toggles are provided. 
 
-## Development server
+1. An attribute directive which hides content in a template based on a feature flag.
+2. A route guard which implements the `CanActivate' interface to turn a route on/off based on a feature flag.
+3. A dynamic component loader which loads a particular component based on a feature flag.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Attribute Directive
 
-## Code scaffolding
+Based on the `showMovieDescriptions` flag in `FeatureDecisionsService` the application will 
+either show or hide movie descriptions on the following URL:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+http://localhost:4200/movies
 
-## Build
+## Route Guard
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Based on the `viewingStockPricesEnabled` flag in `FeatureDecisionsService` the application 
+will either enable or disable access to the following URL:
 
-## Running unit tests
+http://localhost:4200/stock-prices
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Dynamic Component Loader
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Based on the `showLargeBrainyQuotes` flag in `FeatureDecisionsService` the application will either load the
+`SmallBrainyQuoteComponent` or `BigBrainyQuoteComponent` when visiting the following URL:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+http://localhost:4200/brainy-quotes

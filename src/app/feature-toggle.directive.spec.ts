@@ -21,7 +21,7 @@ describe('FeatureToggleDirective', () => {
     // create directive
     const directive = new FeatureToggleDirective(mockElementRef, featureDecisionsService);
     directive.featureName = 'showMovieDescriptions';
-    directive.initialize();
+    directive.ngOnInit();
 
     expect(mockElementRef.nativeElement.style.display).toEqual('none');
   });
@@ -34,7 +34,7 @@ describe('FeatureToggleDirective', () => {
     // create directive
     const directive = new FeatureToggleDirective(mockElementRef, featureDecisionsService);
     directive.featureName = 'showMovieDescriptions';
-    directive.initialize();
+    directive.ngOnInit();
 
     expect(mockElementRef.nativeElement.style.display).toEqual('none');
   });
@@ -48,7 +48,7 @@ describe('FeatureToggleDirective', () => {
     // create directive
     const directive = new FeatureToggleDirective(mockElementRef, featureDecisionsService);
     directive.featureName = 'showMovieDescriptions';
-    directive.initialize();
+    directive.ngOnInit();
 
     expect(mockElementRef.nativeElement.style.display).toEqual('');
   });

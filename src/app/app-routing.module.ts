@@ -4,11 +4,13 @@ import {BrainyQuotesContainerComponent} from './brainy-quotes/brainy-quotes-cont
 import {BigBrainyQuoteComponent} from './brainy-quotes/big-brainy-quote/big-brainy-quote.component';
 import {SmallBrainyQuoteComponent} from './brainy-quotes/small-brainy-quote/small-brainy-quote.component';
 import {MovieListComponent} from './movies/movie-list/movie-list.component';
+import {StockPricesComponent} from "./stocks/stock-prices/stock-prices.component";
 
 
 const routes: Routes = [
   { path: 'brainy-quotes', component: BrainyQuotesContainerComponent },
   { path: 'movies', component: MovieListComponent },
+  { path: 'stock-prices', component: StockPricesComponent }
 ];
 
 @NgModule({

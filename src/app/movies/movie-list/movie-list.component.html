@@ -1,0 +1,6 @@
+<div *ngFor="let movie of movies$ | async">
+  <h1>{{ movie.name }}</h1>
+  <p appFeatureToggle featureName="showMovieDescriptions">
+    {{movie.description}}
+  </p>
+</div>

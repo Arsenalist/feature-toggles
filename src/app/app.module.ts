@@ -8,6 +8,7 @@ import { TogglePointDirective } from './toggle-point.directive';
 import { BigBrainyQuoteComponent } from './brainy-quotes/big-brainy-quote/big-brainy-quote.component';
 import { SmallBrainyQuoteComponent } from './brainy-quotes/small-brainy-quote/small-brainy-quote.component';
 import { FeatureToggleDirective } from './feature-toggle.directive';
+import { MovieListComponent } from './movies/movie-list/movie-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FeatureToggleDirective } from './feature-toggle.directive';
     TogglePointDirective,
     BigBrainyQuoteComponent,
     SmallBrainyQuoteComponent,
-    FeatureToggleDirective
+    FeatureToggleDirective,
+    MovieListComponent
   ],
   imports: [
     BrowserModule,

@@ -4,18 +4,25 @@ import {BrainyQuotesContainerComponent} from './brainy-quotes/brainy-quotes-cont
 import {BigBrainyQuoteComponent} from './brainy-quotes/big-brainy-quote/big-brainy-quote.component';
 import {SmallBrainyQuoteComponent} from './brainy-quotes/small-brainy-quote/small-brainy-quote.component';
 import {MovieListComponent} from './movies/movie-list/movie-list.component';
-import {StockPricesComponent} from "./stocks/stock-prices/stock-prices.component";
+import {StockPricesComponent} from './stocks/stock-prices/stock-prices.component';
+import {CanActivateStockPrices} from './stocks/can-activate-stock-prices';
 
 
 const routes: Routes = [
   { path: 'brainy-quotes', component: BrainyQuotesContainerComponent },
   { path: 'movies', component: MovieListComponent },
-  { path: 'stock-prices', component: StockPricesComponent }
+  {
+    path: 'stock-prices',
+    component: StockPricesComponent,
+    canActivate: [CanActivateStockPrices],
+    data: {featureName: 'viewingStockPricesEnabled'}
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  entryComponents: [BigBrainyQuoteComponent, SmallBrainyQuoteComponent]
+  entryComponents: [BigBrainyQuoteComponent, SmallBrainyQuoteComponent],
+  providers: [CanActivateStockPrices]
 })
 export class AppRoutingModule { }

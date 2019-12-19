@@ -1,7 +1,8 @@
 import {Directive, ViewContainerRef} from '@angular/core';
 
 @Directive({
-  selector: '[appTogglePoint]'
+  selector: '[appTogglePoint]',
+  exportAs: 'appTogglePoint'
 })
 export class TogglePointDirective {
 

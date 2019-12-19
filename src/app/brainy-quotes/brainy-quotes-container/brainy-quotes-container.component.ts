@@ -11,14 +11,20 @@ export class BrainyQuotesContainerComponent implements OnInit {
 
   constructor(private brainyQuoteComponentFactory: BrainyQuoteComponentFactory) { }
 
-  @ViewChild(TogglePointDirective, {static: true}) togglePoint: TogglePointDirective;
+  @ViewChild('togglePoint1', {static: true}) togglePoint1: TogglePointDirective;
+  @ViewChild('togglePoint2', {static: true}) togglePoint2: TogglePointDirective;
+
 
   ngOnInit() {
     this.loadComponent();
   }
 
   private loadComponent() {
-    this.togglePoint.viewContainerRef.clear();
-    this.togglePoint.viewContainerRef.createComponent(this.brainyQuoteComponentFactory.brainyQuoteComponent());
+    this.togglePoint1.viewContainerRef.clear();
+    this.togglePoint1.viewContainerRef.createComponent(this.brainyQuoteComponentFactory.brainyQuoteComponent());
+
+    this.togglePoint2.viewContainerRef.clear();
+    this.togglePoint2.viewContainerRef.createComponent(this.brainyQuoteComponentFactory.brainyQuoteComponent());
+
   }
 }

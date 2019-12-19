@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 
 const FEATURE_DECISIONS = {
   showLargeBrainyQuotes: false,
-  showMovieDescriptions: true
+  showMovieDescriptions: true,
+  viewingStockPricesEnabled: true
 };
 
 @Injectable({

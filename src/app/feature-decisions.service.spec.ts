@@ -9,5 +9,6 @@ describe('FeatureDecisionsService', () => {
     const service: FeatureDecisionsService = TestBed.get(FeatureDecisionsService);
     expect(service.featureDecisions().showLargeBrainyQuotes).toEqual(true);
     expect(service.featureDecisions().showMovieDescriptions).toEqual(false);
+    expect(service.featureDecisions().viewingStockPricesEnabled).toEqual(true);
   });
 });

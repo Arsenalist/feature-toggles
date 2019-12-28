@@ -1,1 +1,7 @@
-<p>nba-scores works!</p>
+<table>
+  <tr *ngFor="let score of scores$ | async">
+    <td>{{score.awayTeam}}</td>
+    <td>{{displayScore(score)}}</td>
+    <td>{{score.homeTeam}}</td>
+  </tr>
+</table>

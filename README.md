@@ -5,6 +5,7 @@ Three examples of feature toggles are provided.
 1. An attribute directive which hides content in a template based on a feature flag.
 2. A route guard which implements the `CanActivate' interface to turn a route on/off based on a feature flag.
 3. A dynamic component loader which loads a particular component based on a feature flag.
+4. Selecting the right class to use inside a component when executing business logic (based on a feature flag).
 
 ## Attribute Directive
 
@@ -27,3 +28,9 @@ Based on the `showLargeBrainyQuotes` flag in `FeatureDecisionsService` the appli
 `SmallBrainyQuoteComponent` or `BigBrainyQuoteComponent` when visiting the following URL:
 
 http://localhost:4200/brainy-quotes
+
+## Factory Method / Strategy
+
+Based on `showNbaScoreMargins` flag in `FeatureDecisionsService` the application will either display NBA scores 
+with or without a margin. This is accomplished by splitting out logic into different classes and using the Strategy
+pattern combined with the Factory Method pattern. 

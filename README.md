@@ -33,4 +33,6 @@ http://localhost:4200/brainy-quotes
 
 Based on `showNbaScoreMargins` flag in `FeatureDecisionsService` the application will either display NBA scores 
 with or without a margin. This is accomplished by splitting out logic into different classes and using the Strategy
-pattern combined with the Factory Method pattern. 
+pattern combined with the Factory Method pattern. A demo can be seen at: 
+
+http://localhost:4200/nba-scores

@@ -10,6 +10,7 @@ import { SmallBrainyQuoteComponent } from './brainy-quotes/small-brainy-quote/sm
 import { FeatureToggleDirective } from './feature-toggle.directive';
 import { MovieListComponent } from './movies/movie-list/movie-list.component';
 import { StockPricesComponent } from './stocks/stock-prices/stock-prices.component';
+import { NbaScoresComponent } from './scores/nba-scores/nba-scores.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { StockPricesComponent } from './stocks/stock-prices/stock-prices.compone
     SmallBrainyQuoteComponent,
     FeatureToggleDirective,
     MovieListComponent,
-    StockPricesComponent
+    StockPricesComponent,
+    NbaScoresComponent
   ],
   imports: [
     BrowserModule,

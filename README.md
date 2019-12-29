@@ -6,6 +6,7 @@ Three examples of feature toggles are provided.
 2. A route guard which implements the `CanActivate' interface to turn a route on/off based on a feature flag.
 3. A dynamic component loader which loads a particular component based on a feature flag.
 4. Selecting the right class to use inside a component when executing business logic (based on a feature flag).
+5. Select the right method to invoke by delegating feature decision query logic to a separate class.
 
 ## Attribute Directive
 
@@ -36,3 +37,12 @@ with or without a margin. This is accomplished by splitting out logic into diffe
 pattern combined with the Factory Method pattern. A demo can be seen at: 
 
 http://localhost:4200/nba-scores
+
+## Feature Aware Invoker
+
+Based on `showBooksFromRussianAuthors` flag in `FeatureDecisionsService` the application will show Russian authors
+or not. This pattern delegates the responsibility of both consulting the `FeatureDecisionsService` and invoking
+the appropriate method to a different class. This avoid spraying if/else blocks in component code for simple 
+cases. It also forces the developer to write small functions. A demo can be seen here:
+
+http://localhost:4200/books

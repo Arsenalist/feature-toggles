@@ -11,6 +11,7 @@ import { FeatureToggleDirective } from './feature-toggle.directive';
 import { MovieListComponent } from './movies/movie-list/movie-list.component';
 import { StockPricesComponent } from './stocks/stock-prices/stock-prices.component';
 import { NbaScoresComponent } from './scores/nba-scores/nba-scores.component';
+import { BookListingComponent } from './bookstore/book-listing/book-listing.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NbaScoresComponent } from './scores/nba-scores/nba-scores.component';
     FeatureToggleDirective,
     MovieListComponent,
     StockPricesComponent,
-    NbaScoresComponent
+    NbaScoresComponent,
+    BookListingComponent
   ],
   imports: [
     BrowserModule,

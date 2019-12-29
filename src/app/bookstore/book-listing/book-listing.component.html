@@ -1,1 +1,4 @@
-<p>book-listing works!</p>
+<ol>
+  <li *ngFor="let book of books$ | async">
+    <strong>{{ book.title }}</strong> - {{ book.author }} - {{ book.authorCountry }}
+</ol>

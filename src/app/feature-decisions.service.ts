@@ -4,7 +4,8 @@ const FEATURE_DECISIONS = {
   showLargeBrainyQuotes: true,
   showMovieDescriptions: true,
   viewingStockPricesEnabled: true,
-  showNbaScoreMargins: true
+  showNbaScoreMargins: true,
+  showBooksFromRussianAuthors: true
 };
 
 @Injectable({

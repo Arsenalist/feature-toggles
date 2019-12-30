@@ -15,12 +15,24 @@ either show or hide movie descriptions on the following URL:
 
 http://localhost:4200/movies
 
+### Use Cases
+
+- Simple text or images that need to be hidden on a page.
+- Structural blocks of content that need to be hidden.
+- There is negligible performance cost of the data being rendered "behind the scenes"
+- Works for both short and long-lived feature toggles as code is not intrusive.
+
 ## Route Guard
 
 Based on the `viewingStockPricesEnabled` flag in `FeatureDecisionsService` the application 
 will either enable or disable access to the following URL:
 
 http://localhost:4200/stock-prices
+
+### Use Cases
+
+- A user's access to a particular URL must be controlled.
+- Service calls to backend systems must be controlled.
 
 
 ## Dynamic Component Loader
@@ -30,6 +42,12 @@ Based on the `showLargeBrainyQuotes` flag in `FeatureDecisionsService` the appli
 
 http://localhost:4200/brainy-quotes
 
+### Use Cases
+
+- There is a tangible cost to rendering components - unlike the Feature Toggle directive where content 
+is rendered in a hidden state, this method does not render the content at all.
+- There is considerable and significantly differing business logic in each component.
+
 ## Factory Method / Strategy
 
 Based on `showNbaScoreMargins` flag in `FeatureDecisionsService` the application will either display NBA scores 
@@ -37,6 +55,12 @@ with or without a margin. This is accomplished by splitting out logic into diffe
 pattern combined with the Factory Method pattern. A demo can be seen at: 
 
 http://localhost:4200/nba-scores
+
+### Use Cases
+
+- Within a component there is enough business logic that separate classes are required to model the features being
+toggled.
+- The features are related enough that re-use can be achieved using object oriented design (e.g., through inheritance).
 
 ## Feature Aware Invoker
 
@@ -46,3 +70,9 @@ the appropriate method to a different class. This avoid spraying if/else blocks 
 cases. It also forces the developer to write small functions. A demo can be seen here:
 
 http://localhost:4200/books
+
+### Use Cases
+
+- The business logic differentiating the two features is simple enough to be abstracted into two different methods
+- The business logic is similar enough that both variants require the same number of arguments 
+(e.g., method parameters).

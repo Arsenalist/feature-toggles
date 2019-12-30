@@ -1,4 +1,4 @@
-import {BrainyQuoteComponentFactory} from './brainy-quote-component-factory';
+import {FeatureToggledComponentFactory} from './feature-toggled-component-factory.service';
 import {BigBrainyQuoteComponent} from './big-brainy-quote/big-brainy-quote.component';
 import {FeatureDecisionsService} from '../feature-decisions.service';
 import {ComponentFactory, ComponentFactoryResolver, Type} from '@angular/core';
@@ -25,8 +25,8 @@ describe('BrainyQuotesService', () => {
     const resolveComponentFactorySpy = jest.spyOn(mockComponentFactoryResolver, 'resolveComponentFactory');
 
     // execute
-    const brainy = new BrainyQuoteComponentFactory(featureDecisionsService, mockComponentFactoryResolver);
-    brainy.brainyQuoteComponent();
+    const brainy = new FeatureToggledComponentFactory(featureDecisionsService, mockComponentFactoryResolver);
+    brainy.featureToggledComponent('showLargeBrainyQuotes', BigBrainyQuoteComponent, SmallBrainyQuoteComponent);
 
     // verify that the right component got instantiated
     expect(resolveComponentFactorySpy).toHaveBeenCalledWith(BigBrainyQuoteComponent);
@@ -45,8 +45,8 @@ describe('BrainyQuotesService', () => {
     const resolveComponentFactorySpy = jest.spyOn(mockComponentFactoryResolver, 'resolveComponentFactory');
 
     // execute
-    const brainy = new BrainyQuoteComponentFactory(featureDecisionsService, mockComponentFactoryResolver);
-    brainy.brainyQuoteComponent();
+    const brainy = new FeatureToggledComponentFactory(featureDecisionsService, mockComponentFactoryResolver);
+    brainy.featureToggledComponent('showLargeBrainyQuotes', BigBrainyQuoteComponent, SmallBrainyQuoteComponent);
 
     // verify that the right component got instantiated
     expect(resolveComponentFactorySpy).toHaveBeenCalledWith(SmallBrainyQuoteComponent);

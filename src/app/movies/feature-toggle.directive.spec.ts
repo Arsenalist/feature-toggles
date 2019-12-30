@@ -1,6 +1,6 @@
 import { FeatureToggleDirective } from './feature-toggle.directive';
 import {ElementRef} from '@angular/core';
-import {FeatureDecisionsService} from './feature-decisions.service';
+import {FeatureDecisionsService} from '../feature-decisions.service';
 
 describe('FeatureToggleDirective', () => {
   let mockElementRef: ElementRef;

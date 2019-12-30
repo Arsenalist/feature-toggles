@@ -7,7 +7,7 @@ import { BrainyQuotesContainerComponent } from './brainy-quotes/brainy-quotes-co
 import { TogglePointDirective } from './toggle-point.directive';
 import { BigBrainyQuoteComponent } from './brainy-quotes/big-brainy-quote/big-brainy-quote.component';
 import { SmallBrainyQuoteComponent } from './brainy-quotes/small-brainy-quote/small-brainy-quote.component';
-import { FeatureToggleDirective } from './feature-toggle.directive';
+import { FeatureToggleDirective } from './movies/feature-toggle.directive';
 import { MovieListComponent } from './movies/movie-list/movie-list.component';
 import { StockPricesComponent } from './stocks/stock-prices/stock-prices.component';
 import { NbaScoresComponent } from './scores/nba-scores/nba-scores.component';

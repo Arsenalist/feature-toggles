@@ -12,12 +12,13 @@ export class FeatureToggledComponentFactory<FeatureOnComponent, FeatureOffCompon
               private componentFactoryResolver: ComponentFactoryResolver) {}
 
   public featureToggledComponent(featureName: string,
-                                 componentA: Type<FeatureOnComponent>,
-                                 componentB: Type<FeatureOffComponent>): ComponentFactory<FeatureOnComponent | FeatureOffComponent> {
+                                 featureOnComponent: Type<FeatureOnComponent>,
+                                 featureOffComponent: Type<FeatureOffComponent>):
+    ComponentFactory<FeatureOnComponent | FeatureOffComponent> {
     const featureDecisions = this.featureDecisionsService.featureDecisions();
     const featureValue = featureDecisions[featureName];
     return featureValue === true ?
-      this.componentFactoryResolver.resolveComponentFactory(componentA) :
-      this.componentFactoryResolver.resolveComponentFactory(componentB);
+      this.componentFactoryResolver.resolveComponentFactory(featureOnComponent) :
+      this.componentFactoryResolver.resolveComponentFactory(featureOffComponent);
   }
 }

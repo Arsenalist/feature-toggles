@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {TogglePointDirective} from '../../toggle-point.directive';
+import {TogglePointDirective} from '../toggle-point.directive';
 import {FeatureToggledComponentFactory} from '../feature-toggled-component-factory.service';
 import {BigBrainyQuoteComponent} from '../big-brainy-quote/big-brainy-quote.component';
 import {SmallBrainyQuoteComponent} from '../small-brainy-quote/small-brainy-quote.component';

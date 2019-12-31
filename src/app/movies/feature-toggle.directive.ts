@@ -1,5 +1,5 @@
 import {Directive, ElementRef, Input, OnInit} from '@angular/core';
-import {FeatureDecisionsService} from './feature-decisions.service';
+import {FeatureDecisionsService} from '../feature-decisions.service';
 
 @Directive({
   selector: '[appFeatureToggle]'

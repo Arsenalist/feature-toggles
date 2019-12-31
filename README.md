@@ -48,6 +48,11 @@ http://localhost:4200/brainy-quotes
 is rendered in a hidden state, this method does not render the content at all.
 - There is considerable and significantly differing business logic in each component.
 
+### Architecture
+
+![Dynamic Component Loader - Sequence Diagram](docs/dynamic-component-loader.png "Dynamic Component Loader - Sequence Diagram")
+
+
 ## Factory Method / Strategy
 
 Based on `showNbaScoreMargins` flag in `FeatureDecisionsService` the application will either display NBA scores 

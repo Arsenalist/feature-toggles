@@ -1,0 +1,14 @@
+@startuml
+
+title Dynamic Component Loader
+
+boundary BrainyQuotesContainerComponent as BQCC
+boundary FeatureToggledComponentFactory as FTCF
+boundary FeatureDecisionsService as FDS
+
+BQCC -> FTCF : featureToggledComponent(featureName, OnComp, OffComp)
+FTCF -> FDS : featureDecisions()
+FDS -> FTCF : set of feature decisions
+FTCF -> BQCC : OnComp | OffComp
+
+@enduml

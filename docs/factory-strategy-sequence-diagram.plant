@@ -1,0 +1,15 @@
+@startuml
+
+title Factory Method/Strategy
+
+boundary NbaScoresComponent as NSC
+boundary DisplayScoreFactory as DSF
+boundary FeatureDecisionsService as FDS
+
+
+NSC -> DSF : createDisplayScore(NbaScore)
+DSF -> FDS : featureDecisions()
+FDS -> DSF : set of feature decisions
+DSF -> NSC : DisplayScore
+
+@enduml

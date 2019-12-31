@@ -61,6 +61,13 @@ pattern combined with the Factory Method pattern. A demo can be seen at:
 
 http://localhost:4200/nba-scores
 
+### Architecture
+
+![Factory/Strategy - Sequence Diagram](docs/factory-strategy-sequence-diagram.png "Factory/Strategy - Sequence Diagram")
+
+![DisplayScore - Class Diagram](docs/display-score-class-diagram.png "DisplayScore - Class Diagram")
+
+
 ### Use Cases
 
 - Within a component there is enough business logic that separate classes are required to model the features being
